@@ -1,0 +1,11 @@
+appName: DemoOJ
+server:
+  host: 127.0.0.1
+  port: 19198
+
+microservices:
+  - name: auth
+    slaves:
+      - host: 127.0.0.1
+        HTTPPort: 19199
+        gRPCPort: 9000
